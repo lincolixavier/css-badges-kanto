@@ -1,0 +1,88 @@
+/* ROCK BADGE */
+div, *{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.wrap{
+  height: 100vh;
+  width: 100%;
+}
+.wrap-badge{
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+}
+  .header-badge{
+    width: 100%;
+    text-align: center;
+  }
+  .badge-boulder{
+    width: 257px;
+    height: 229px;
+    position: relative;
+  }
+
+   .trapezoid {
+      clip-path: polygon(0 0, 100% 0, 73% 100%, 27% 100%);
+      height: 60px;
+      width: 90px;
+      background: #9fa09f;
+      position:absolute;
+   }
+   .trapezoid01{
+    left: 0;
+    right: 0;
+    margin: auto;
+   }
+
+    .trapezoid02{
+      
+      transform: rotate(45deg);
+      top: 24px;
+      right: 24px;
+      }
+    
+    .trapezoid03{
+      
+      transform: rotate(90deg);
+      right: -1px;
+      top: 84px;
+    }
+    .trapezoid04{
+      
+      transform: rotate(135deg);
+    
+      top: 144px;
+      right: 24px;
+    }
+    .trapezoid05{
+      transform: rotate(180deg);
+      bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    }
+    .trapezoid06{
+      
+      transform: rotate(-45deg);
+      right: 143px;
+      top: 24px;
+      }
+    
+    .trapezoid07{
+      
+      transform: rotate(-90deg);
+      left: -1px;
+      top: 84px;
+    }
+    .trapezoid08{
+      
+      transform: rotate(-135deg);
+      left: 24px;
+      top: 144px;
+    }
