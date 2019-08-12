@@ -1,2 +1,2 @@
-# css-badges-kanto
+# Kanto Badges 
 Pokemon Kanto gym Badges made with CSS 💙 
