@@ -83,11 +83,21 @@ div, *{
   right: 0;
   margin: auto;
 }
+.trapezoids .trapezoid01::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: -13px;
+  transform: rotate(-44deg) skewX(38deg);
+  box-shadow: inset -3px 30px 0px #efefef;
+}
 .trapezoid02{
   transform: rotate(45deg);
   top: 24px;
   right: 24px;
 }
+
 .trapezoid03{
   transform: rotate(90deg);
   right: -1px;
