@@ -171,25 +171,25 @@ div, *{
 }
 
 /* CASCADE BADGE */
-.wrap-badge.cascade{
-  background: #1fb0e9;
-}
-.badge-cascade{
-  width: 60%;
+  .wrap-badge.cascade{
+    background: #1fb0e9;
+  }
+  .badge-cascade{
+    width: 60%;
     height: 67%;
     display: flex;
     justify-content: center;
     margin-top: 14px;
-}
-.cascade-top{
-  margin-top: 20px;
-  width: 100px;
-  height: 100px;
-  background: #25b4ff;
-  border-bottom: 6px solid #000;
-  border-left: 6px solid #000;
-  transform: rotate(135deg) skew(-15deg,-15deg);
-}
+  }
+    .cascade-top{
+      margin-top: 20px;
+      width: 100px;
+      height: 100px;
+      background: #25b4ff;
+      border-bottom: 6px solid #000;
+      border-left: 6px solid #000;
+      transform: rotate(135deg) skew(-15deg,-15deg);
+    }
 
 /* THUNDER BADGE */
 .wrap-badge.thunder{

@@ -1,5 +1,5 @@
 # Kanto Badges 
 Pokemon Kanto gym Badges made with CSS 💙 
 
-<!-- [View the project page](http://pattle.github.io/simpsons-in-css "Simpsons in CSS") -->
+<[Página do Projeto](https://lincolixavier.github.io/css-badges-kanto/ "Pokemon Badges in CSS") -->
 
