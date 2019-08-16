@@ -6,6 +6,7 @@ div, *{
 .wrap{
   height: 100vh;
   width: 100%;
+  display: flex;
 }
 .wrap-badge{
   display: flex;
@@ -13,18 +14,21 @@ div, *{
   align-content: center;
   justify-content: center;
   flex-wrap: wrap;
-  width: 100%;
-  height: 100%;
+  width: 25%;
+  height: 50%;
 }
 .header-badge{
   width: 100%;
   text-align: center;
   margin: 18px 0;
   font-family: 'Indie Flower', cursive;
-  color: #8c8c8c;
+  color: #FFF;
   font-size: 38px;
 }
 /* BOULDER BADGE */
+.wrap-badge.boulder{
+  background: #8c8c8c;
+}
 .badge-boulder{
   width: 257px;
   height: 229px;
@@ -141,4 +145,15 @@ div, *{
   right: 0;
   margin: auto;
   clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+}
+
+
+/* CASCADE BADGE */
+.wrap-badge.cascade{
+  background: #ce1e93;
+}
+
+/* THUNDER BADGE */
+.wrap-badge.thunder{
+  background: #fcff47;
 }
