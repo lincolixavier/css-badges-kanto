@@ -7,6 +7,7 @@ div, *{
   height: 100vh;
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
 }
 .wrap-badge{
   display: flex;
@@ -16,14 +17,17 @@ div, *{
   flex-wrap: wrap;
   width: 25%;
   height: 50%;
+  position: relative;
 }
 .header-badge{
   width: 100%;
+  position: absolute;
+  top: 10px;
   text-align: center;
   margin: 0px 0 11px;
   font-family: 'Indie Flower', cursive;
   color: #FFF;
-  font-size: 38px;
+  font-size: 20px;
 }
 /* BOULDER BADGE */
 .wrap-badge.boulder{
@@ -183,6 +187,7 @@ div, *{
     margin-top: 14px;
     flex-wrap: wrap;
     position: relative;
+    zoom: 0.8;
   }
     .cascade-top{
       margin-top: 20px;
@@ -235,4 +240,16 @@ div, *{
 /* THUNDER BADGE */
 .wrap-badge.thunder{
   background: #fcff47;
+}
+
+
+@media screen and (max-width: 1024px){
+  .wrap-badge{
+    width: 50%;
+  }
+}
+@media screen and (max-width: 768px){
+  .wrap-badge{
+    width: 100%;
+  }
 }
