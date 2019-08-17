@@ -173,22 +173,63 @@ div, *{
 /* CASCADE BADGE */
   .wrap-badge.cascade{
     background: #1fb0e9;
+    
   }
   .badge-cascade{
-    width: 60%;
-    height: 67%;
+    width: 142px;
+    height: 200px;
     display: flex;
     justify-content: center;
     margin-top: 14px;
+    flex-wrap: wrap;
+    position: relative;
   }
     .cascade-top{
       margin-top: 20px;
-      width: 100px;
-      height: 100px;
-      background: #25b4ff;
-      border-bottom: 6px solid #000;
-      border-left: 6px solid #000;
-      transform: rotate(135deg) skew(-15deg,-15deg);
+      width: 111px;
+      height: 111px;
+      background: #2196F3;
+      transform: rotate(135deg) skew(-14.4deg,-14.4deg);
+      position: relative;
+      z-index: 3;
+      left: -1px;
+      top: 13px;
+      border-radius: 8px;
+    }
+    .cascade-bottom{
+      top: -81px;
+      left: -1px;
+      width: 135.9px;
+      position: relative;
+      height: 162px;
+      background: #2196F3;
+      border-radius: 50%;
+    }
+    .border{
+      position: absolute;
+      z-index:0;
+      top: -6px;
+      left: 0px;
+    }
+      .border .cascade-top{
+        background: #000;
+        zoom: 1.07;
+        left: 11px;
+      }
+      .border .cascade-bottom{
+        background: #000;
+        zoom: 1.07;
+      }
+    .detail{
+      background: #add8ff;
+      width: 23px;
+      z-index: 10;
+      height: 43px;
+      position: absolute;
+      bottom: 10px;
+      left: 18px;
+      transform: rotate(-21deg);
+      border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
     }
 
 /* THUNDER BADGE */
