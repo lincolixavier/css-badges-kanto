@@ -239,8 +239,78 @@ div, *{
 
 /* THUNDER BADGE */
 .wrap-badge.thunder{
-  background: #fcff47;
+  background: #ffd57a;
 }
+  .badge-thunder{
+    width: 200px;
+    height: 200px;
+    border: 1px solid;
+    position: relative;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+  .center-badge-thunder{
+      width: 40%;
+      height: 40%;
+      border: 1px solid #000;
+      position: relative;
+      margin: auto;
+  }
+  .thunder-rectangule {
+    background: #ff642c;
+    width: 33px;
+    height: 80px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+    .rec01{
+      transform: rotate(45deg)
+    }
+    .rec02{
+      transform: rotate(90deg)
+
+    }
+    .rec03{
+       transform: rotate(-45deg)
+    }
+  .thunder-pentagons{
+    width: 60%;
+    height: 60%;
+    border: 1px solid rgb(92, 92, 92);
+    position: relative;
+    margin: auto;
+    width: 50%;
+    height: 50%;
+    border: 1px solid rgb(92, 92, 92);
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+  }
+  .thunder-pentagon{
+    background: #FFEB3B;
+    width: 50px;
+    height: 45px;
+    position: absolute;
+    z-index: 1;
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    top: -37px;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  .pen05{
+    top: initial;
+    bottom: -38px;
+    transform: rotate(-180deg);
+  }
+
 
 
 @media screen and (max-width: 1024px){
