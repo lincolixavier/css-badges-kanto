@@ -1,0 +1,325 @@
+div, *{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@mixin flex-center(){
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+.wrap{
+  height: 100vh;
+  width: 100%;
+}
+.wrap-badge{
+  @include flex-center();
+  width: 25%;
+  height: 50%;
+  position: relative;
+}
+
+.header-badge{
+  width: 100%;
+  position: absolute;
+  top: 10px;
+  text-align: center;
+  margin: 0px 0 11px;
+  font-family: 'Indie Flower', cursive;
+  color: #FFF;
+  font-size: 20px;
+}
+/* BOULDER BADGE */
+.wrap-badge.boulder{
+  background: #8c8c8c;
+}
+.badge-boulder{
+  width: 257px;
+  height: 229px;
+  zoom: 0.74;
+  position: relative;
+}
+.background{
+  height: 100%;
+  background: #000;
+  width: 89%;
+  border-radius: 100%;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+}
+.trapezoids-bg .trapezoid{
+  background: #000;
+}
+.trapezoids-bg .trapezoid01{
+  transform: scale(1.10);
+  height: 77px;
+  width: 87px;
+}
+.trapezoids-bg .trapezoid02{
+  transform: scale(1.10) rotate(45deg);
+}
+.trapezoids-bg .trapezoid03{
+  transform: scale(1.10) rotate(90deg);
+}
+.trapezoids-bg .trapezoid04{
+  transform: scale(1.10) rotate(135deg);
+}
+.trapezoids-bg .trapezoid05{
+  transform: scale(1.10) rotate(180deg);
+  height: 64px;
+  width: 87px;
+}
+.trapezoids-bg .trapezoid06{
+  transform: scale(1.10) rotate(-45deg);
+}
+.trapezoids-bg .trapezoid07{
+  transform: scale(1.10) rotate(-90deg);
+}
+.trapezoids-bg .trapezoid08{
+  transform: scale(1.10) rotate(-135deg);
+}
+.trapezoid {
+  clip-path: polygon(0 0, 100% 0, 73% 100%, 27% 100%);
+  height: 60px;
+  width: 90px;
+  background: rgb(206, 206, 206);
+  position:absolute;
+}
+.trapezoid01{
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.trapezoids .trapezoid01::after{
+  content: '';
+  position: absolute;
+  width: 74%;
+  height: 110px;
+  top: -53px;
+  left: 43px;
+  transform: rotate(-62deg) skewX(38deg);
+  box-shadow: inset -3px 15px 0px #efefef;
+}
+.trapezoid02{
+  transform: rotate(45deg);
+  top: 24px;
+  right: 24px;
+}
+
+.trapezoid03{
+  transform: rotate(90deg);
+  right: -1px;
+  top: 84px;
+}
+.trapezoid04{
+  transform: rotate(135deg);
+  top: 144px;
+  right: 24px;
+}
+.trapezoid05{
+  transform: rotate(180deg);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.trapezoid06{
+  transform: rotate(-45deg);
+  right: 143px;
+  top: 24px;
+}
+.trapezoid07{
+  transform: rotate(-90deg);
+  left: -1px;
+  top: 84px;
+}
+.trapezoid08{
+  transform: rotate(-135deg);
+  left: 24px;
+  top: 144px;
+}
+.center-octogone{
+  width: 39%;
+  height: 44%;
+  background: #d4d4d4;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+}
+.center-octogone::before{
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 100px;
+  top: 0;
+  left: 92px;
+  background: #efefef;
+  transform: rotate(-117deg) skewX(38deg);
+}
+.center-octogone::after{
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 167px;
+  top: 10px;
+  left: 23px;
+  background: #efefef;
+  transform: rotate(-159deg) skewY(52deg);
+}
+
+/* CASCADE BADGE */
+  .wrap-badge.cascade{
+    background: #1fb0e9;
+    
+  }
+  .badge-cascade{
+    width: 142px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    margin-top: 14px;
+    flex-wrap: wrap;
+    position: relative;
+    zoom: 0.8;
+  }
+    .cascade-top{
+      margin-top: 20px;
+      width: 111px;
+      height: 111px;
+      background: #2196F3;
+      transform: rotate(135deg) skew(-14.4deg,-14.4deg);
+      position: relative;
+      z-index: 3;
+      left: -1px;
+      top: 13px;
+      border-radius: 8px;
+    }
+    .cascade-bottom{
+      top: -81px;
+      left: -1px;
+      width: 135.9px;
+      position: relative;
+      height: 162px;
+      background: #2196F3;
+      border-radius: 50%;
+    }
+    .border{
+      position: absolute;
+      z-index:0;
+      top: -6px;
+      left: 0px;
+    }
+      .border .cascade-top{
+        background: #000;
+        zoom: 1.07;
+        left: 11px;
+      }
+      .border .cascade-bottom{
+        background: #000;
+        zoom: 1.07;
+      }
+    .detail{
+      background: #add8ff;
+      width: 23px;
+      z-index: 10;
+      height: 43px;
+      position: absolute;
+      bottom: 10px;
+      left: 18px;
+      transform: rotate(-21deg);
+      border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    }
+
+/* THUNDER BADGE */
+.wrap-badge.thunder{
+  background: #ffd57a;
+}
+  .badge-thunder{
+    width: 200px;
+    height: 200px;
+    border: 1px solid;
+    position: relative;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+  .center-badge-thunder{
+      width: 40%;
+      height: 40%;
+      border: 1px solid #000;
+      position: relative;
+      margin: auto;
+  }
+  .thunder-rectangule {
+    background: #ff642c;
+    width: 33px;
+    height: 80px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+    .rec01{
+      transform: rotate(45deg)
+    }
+    .rec02{
+      transform: rotate(90deg)
+    }
+    .rec03{
+       transform: rotate(-45deg)
+    }
+  .thunder-pentagons{
+    width: 60%;
+    height: 60%;
+    border: 1px solid rgb(92, 92, 92);
+    position: relative;
+    margin: auto;
+    width: 50%;
+    height: 50%;
+    border: 1px solid rgb(92, 92, 92);
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+  }
+  .thunder-pentagon{
+    background: #FFEB3B;
+    width: 50px;
+    height: 45px;
+    position: absolute;
+    z-index: 1;
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    top: -37px;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  .pen05{
+    top: initial;
+    bottom: -38px;
+    transform: rotate(-180deg);
+  }
+
+
+
+@media screen and (max-width: 1024px){
+  .wrap-badge{
+    width: 50%;
+  }
+}
+@media screen and (max-width: 768px){
+  .wrap-badge{
+    width: 100%;
+  }
+}

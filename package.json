@@ -1,0 +1,25 @@
+{
+  "name": "css-pokemon-badges",
+  "version": "1.0.0",
+  "description": "Kanto Gym Badges in CSS",
+  "main": "index.js",
+  "scripts": {
+    "css": "node-sass --output-style compressed --include-path scss styles.scss styles.css",
+    "watch": "nodemon -e scss -x \"npm run css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lincolixavier/css-badges-kanto.git"
+  },
+  "dependencies": {
+    "node-sass": "^4.12.0",
+    "nodemon": "^1.19.1",
+    "normalize.css": "^8.0.0"
+  },
+  "author": "Lincoli Xavier",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lincolixavier/css-badges-kanto/issues"
+  },
+  "homepage": "https://github.com/lincolixavier/css-badges-kanto#readme"
+}
