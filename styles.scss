@@ -242,7 +242,9 @@ div, *{
       border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
     }
 
-/* THUNDER BADGE */
+/**************************************************** 
+    THUNDER BADGE 
+**************************************************/
 .wrap-badge.thunder{
   background: #ffd57a;
 }
@@ -350,6 +352,147 @@ div, *{
     left: -92px;
     transform: rotate(-45deg);
   }
+
+/**************************************************** 
+    RAINBOW BADGE 
+**************************************************/
+.wrap-badge.rainbow{
+  background: #25d8a2;
+  
+}
+
+  .badge-rainbow{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+  .center-badge-rainbow{
+      width: 40%;
+      height: 40%;
+      position: relative;
+      margin: auto;
+  }
+  .center-badge-rainbow.center{
+    position: absolute;
+    top: 34%;
+    z-index: 9;
+    zoom: 0.8;
+    .rainbow-rectangule{
+      background: #2f26ac;
+    }
+  }
+  .rainbow-rectangule {
+    background: #2f26ac;
+    width: 33px;
+    height: 80px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+    .rec01{
+      transform: rotate(45deg)
+    }
+    .rec02{
+      transform: rotate(90deg)
+    }
+    .rec03{
+       transform: rotate(-45deg)
+    }
+  .rainbow-hexagons{
+    width: 60%;
+    height: 60%;
+    position: relative;
+    margin: auto;
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+  }
+  .rainbow-hexagon {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    z-index: 1;
+    top: -46px;
+    left: 0px;
+    right: 0.3px;
+    margin: auto;
+    background: #ccc;
+    .inner{
+      width: 33.33333%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto;
+      
+    }
+    &.hex01 .inner{
+      background: #ed3c5d;
+    }
+    .inner-rec01{
+
+      transform: rotate(45deg);
+    }
+    .inner-rec02{
+     
+    }
+    .inner-rec03{
+    
+      transform: rotate(-45deg);
+    }
+  }
+  .hex01{
+    transform: rotate(90deg);
+  }
+  .hex02 {
+    background: #f28d46;
+    transform: rotate(75deg);
+    top: -27px;
+    left: 73px;
+  }
+  .hex03 {
+    background: #f8dd4b;
+    transform: rotate(120.5deg);
+    top: 21px;
+    left: 92px; 
+  }
+  .hex04{
+    background: #acda5f;
+    transform: rotate(165deg);
+    top: -67px;
+    left: 73px;
+  }
+  .hex05{
+    top: initial;
+    bottom: -38px;
+    transform: rotate(-180deg);
+  }
+  .hex06{
+    top: 75px;
+    left: -88px;
+    transform: rotate(153deg);
+  }
+  .hex07 {
+    top: 28px;
+    left: -130px;
+    transform: rotate(270deg);
+  }
+  .hex08 {
+    top: -18px;
+    left: -92px;
+    transform: rotate(-45deg);
+  }
+
 
 @media screen and (max-width: 1024px){
   .wrap-badge{
