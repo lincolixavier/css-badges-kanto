@@ -358,9 +358,7 @@ div, *{
 **************************************************/
 .wrap-badge.rainbow{
   background: #25d8a2;
-  
 }
-
   .badge-rainbow{
     width: 200px;
     height: 200px;
@@ -418,17 +416,16 @@ div, *{
     bottom: 0;
   }
   .rainbow-hexagon {
-    width: 50px;
-    height: 50px;
+    width: 55px;
+    height: 55px;
     position: absolute;
     z-index: 1;
     top: -46px;
     left: 0px;
     right: 0.3px;
     margin: auto;
-    background: #ccc;
     .inner{
-      width: 33.33333%;
+      width: 32px;
       height: 100%;
       position: absolute;
       left: 0;
@@ -439,48 +436,59 @@ div, *{
     &.hex01 .inner{
       background: #ed3c5d;
     }
-    .inner-rec01{
-
-      transform: rotate(45deg);
+    &.hex02 .inner{
+      background: #f28d46;
     }
-    .inner-rec02{
-     
+    &.hex03 .inner{
+      background: #f8dd4b;
+    }
+    &.hex04 .inner{
+      background: #acda5f;
+    }
+    &.hex05 .inner{
+      background: #367925;
+    }
+    &.hex06 .inner{
+      background: #3fa4d6;
+    }
+    
+    
+    .inner-rec01{
+      transform: rotate(62deg);
     }
     .inner-rec03{
-    
-      transform: rotate(-45deg);
+      transform: rotate(-58deg);
     }
   }
+
   .hex01{
-    transform: rotate(90deg);
+    transform: rotate(58deg);
+    top:-48px;
   }
   .hex02 {
-    background: #f28d46;
-    transform: rotate(75deg);
+    transform: rotate(103deg);
     top: -27px;
-    left: 73px;
+    left: 71px;
   }
   .hex03 {
-    background: #f8dd4b;
-    transform: rotate(120.5deg);
+    transform: rotate(147.5deg);
     top: 21px;
     left: 92px; 
   }
   .hex04{
-    background: #acda5f;
-    transform: rotate(165deg);
-    top: -67px;
-    left: 73px;
+    transform: rotate(136deg);
+    top: 71px;
+    left: 71px;
   }
   .hex05{
     top: initial;
-    bottom: -38px;
+    bottom: -47px;
     transform: rotate(-180deg);
   }
   .hex06{
-    top: 75px;
-    left: -88px;
-    transform: rotate(153deg);
+    top: 72px;
+    left: -97px;
+    transform: rotate(163deg);
   }
   .hex07 {
     top: 28px;
