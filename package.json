@@ -12,7 +12,7 @@
     "url": "git+https://github.com/lincolixavier/css-badges-kanto.git"
   },
   "dependencies": {
-    "node-sass": "^7.0.0",
+    "node-sass": "^7.0.3",
     "nodemon": "^1.19.1",
     "normalize.css": "^8.0.0"
   },
